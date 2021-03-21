@@ -3,8 +3,6 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-            	bat 'e:'
-            	bat 'cd e:/workspace/simple-java-maven-app1@script'
                 bat 'mvn -B -DskipTests clean package'
             }
         }
